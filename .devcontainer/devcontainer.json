@@ -7,7 +7,7 @@
 		"ghcr.io/devcontainers/features/aws-cli": {},
 		"ghcr.io/devcontainers/features/node": {}
 	},
-	"postCreateCommand": "sudo corepack enable && corepack prepare yarn@4.9.4 --activate && npm install -g @devcontainers/cli",
+	// "postCreateCommand": "${containerWorkspaceFolder}/.devcontainer/post-create.sh",
 	"customizations": {
 		"vscode": {
 			"extensions": [
