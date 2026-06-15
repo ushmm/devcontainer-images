@@ -1,0 +1,27 @@
+version: 2
+updates:
+  # Check for devcontainer ecosystem updates weekly
+  - package-ecosystem: "devcontainers" # See documentation for possible values
+    directory: "/"
+    schedule:
+      interval: weekly
+  # Check for GitHub Actions updates weekly
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: weekly
+  # Check for Docker updates weekly
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: weekly
+  # # Check for Terraform updates weekly - might add IaC in the future
+  # - package-ecosystem: "opentofu"
+  #   directory: "/"
+  #   schedule:
+  #     interval: weekly
+  # Check for npm updates weekly
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: weekly
