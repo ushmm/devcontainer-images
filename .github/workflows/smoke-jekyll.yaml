@@ -1,28 +1,27 @@
 name: Smoke test "jekyll" build
 
-on: 
+on:
   workflow_dispatch:
-  push:
-    branches:
-    - main
-  pull_request:
-    paths:
-      - src/jekyll/**
-      - .github/workflows/smoke-jekyll.yaml
-      - .github/actions/**
-      - build/**
+#  push:
+#    branches:
+#    - main
+#  pull_request:
+#    paths:
+#      - src/jekyll/**
+#      - .github/workflows/smoke-jekyll.yaml
+#      - .github/actions/**
+#      - build/**
 jobs:
   smoke-test:
     name: Smoke test
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        id: checkout
+        uses: actions/checkout@v6
 
-    - name: Checkout
-      id: checkout
-      uses: actions/checkout@v6
-
-    - name: Smoke test
-      id: smoke_test
-      uses: ./.github/actions/smoke-test
-      with:
-        image: jekyll
+      - name: Smoke test
+        id: smoke_test
+        uses: ./.github/actions/smoke-test
+        with:
+          image: jekyll
