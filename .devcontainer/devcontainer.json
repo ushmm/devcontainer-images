@@ -1,7 +1,7 @@
 {
 	"image": "mcr.microsoft.com/devcontainers/base:debian",
 	"features": {
-		"ghcr.io/devcontainers/features/docker-in-docker:3": {
+		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
 			"moby": false
 		},
 		"ghcr.io/devcontainers/features/aws-cli": {},
