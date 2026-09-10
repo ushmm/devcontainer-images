@@ -11,7 +11,7 @@
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
-		"vitest": "^4.1.9"
+		"vitest": "^4.1.11"
 	},
 	"dependencies": {
 		"copyfiles": "^2.4.1",
